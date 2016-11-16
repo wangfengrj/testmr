@@ -68,7 +68,7 @@ public class WordCount {
 	public static void main(String[] args) throws Exception {
 		Configuration conf = new Configuration(); // 启用默认配置
 		String[] otherArgs = new GenericOptionsParser(conf, args)
-				.getRemainingArgs();
+		.getRemainingArgs();
 		if (otherArgs.length != 2) {
 			System.err.println("Usage: wordcount <in> <out>");
 			System.exit(2);
